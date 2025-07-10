@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -25,7 +26,7 @@ export default function Login() {
 
   return (
     <div className="max-w-md mx-auto p-4 border rounded shadow">
-      <h2 className="text-xl font-bold mb-4">Login</h2>
+      <Link to="/register" className="text-purple-600 underline">Create an account</Link>
       {error && <p className="text-red-500">{error}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
