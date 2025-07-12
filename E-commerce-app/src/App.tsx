@@ -7,7 +7,6 @@ import Register from './components/Register';
 import Navbar from './components/Navbar';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebaseConfig';
-
 import './App.css';
 import { OrderHistory } from './components/OrderHistory';
 

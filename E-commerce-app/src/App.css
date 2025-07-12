@@ -41,16 +41,6 @@
   color: #888;
 }
 
-.cart {
-  background-color:white;
-  color:black;
-}
-
-.home {
-  background-color: white;
-  color:black;
-}
-
 img {
   width:35%;
   border-radius: 2px solid black;
@@ -68,3 +58,52 @@ img {
 .product {
   background-color: #8f7878;
 }
+
+
+.navbar-main {
+  background-color: black;
+  display:flex;
+  justify-content: space-between;
+  padding-top:2%;
+  padding-bottom:2%;
+  font-size:2rem;
+}
+
+.home {
+  padding:30px;
+  margin:20px;
+}
+
+.cart {
+  padding:30px;
+  margin:20px;
+}
+
+.order {
+  padding:30px;
+  margin:20px;
+}
+
+.adminpage {
+  margin:20px;
+  padding-top:50px;
+}
+
+.logout-button {
+  margin-right:20px;
+}
+
+.addtocart {
+  background-color: bisque;
+  color:black;
+  font-weight: bolder;
+}
+
+.up-addProduct {
+  background-color: rgb(182, 138, 84);
+  color:black;
+  font-weight: bolder;
+}
+
+
+

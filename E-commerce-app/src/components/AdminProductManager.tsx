@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import "../App.css"
 import {
   fetchAllProducts,
   createProduct,
@@ -69,16 +70,16 @@ export default function AdminProductManager() {
 
   return (
     <div className="admin p-4">
-      <h2 className="text-xl font-bold mb-4">Admin Product Manager</h2>
+      <h2 className="text-xl font-bold mb-4">Product Manager(Add Products)</h2>
 
       <div className="mb-4 space-y-2">
-        <input className="border p-2 w-full" name="title" placeholder="Title" value={form.title} onChange={handleChange} />
-        <input className="border p-2 w-full" name="price" placeholder="Price" value={form.price} onChange={handleChange} />
-        <input className="border p-2 w-full" name="category" placeholder="Category" value={form.category} onChange={handleChange} />
-        <textarea className="border p-2 w-full" name="description" placeholder="Description" value={form.description} onChange={handleChange} />
-        <input className="border p-2 w-full" name="image" placeholder="Image URL" value={form.image} onChange={handleChange} />
-        <input className="border p-2 w-full" name="stock" placeholder="Stock" value={form.stock} onChange={handleChange} />
-        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={handleSubmit}>
+        <input  name="title" placeholder="Title" value={form.title} onChange={handleChange} />
+        <input  name="price" placeholder="Price" value={form.price} onChange={handleChange} />
+        <input  name="category" placeholder="Category" value={form.category} onChange={handleChange} />
+        <textarea  name="description" placeholder="Description" value={form.description} onChange={handleChange} />
+        <input name="image" placeholder="Image URL" value={form.image} onChange={handleChange} />
+        <input  name="stock" placeholder="Stock" value={form.stock} onChange={handleChange} />
+        <button className="up-addProduct" onClick={handleSubmit}>
           {editId ? 'Update Product' : 'Add Product'}
         </button>
       </div>
