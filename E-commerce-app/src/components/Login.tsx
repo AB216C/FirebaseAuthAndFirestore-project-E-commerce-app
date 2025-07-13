@@ -3,6 +3,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import "/..App.css"
 
 export default function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -26,7 +27,7 @@ export default function Login() {
 
   return (
     <div className="max-w-md mx-auto p-4 border rounded shadow">
-      <Link to="/register" className="text-purple-600 underline">Create an account</Link>
+      <Link to="/register" className="createAcc">Create an account</Link>
       {error && <p className="text-red-500">{error}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
