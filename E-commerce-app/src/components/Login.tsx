@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import "/..App.css"
+import "../App.css"
 
 export default function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
