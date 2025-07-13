@@ -13,6 +13,8 @@ npm run dev;
 
 ## Project features
 
+The Main goal of the project is to use created noSQL API(firestore) to perform CRUD operations, and authenticating the application using firebase.
+
 The project is made of six main folders: api, app, components, features/cart, and two main files, such as firebaseConfig.ts and main.tsx. The API folder contains a file named firebaseProducts.ts. The main purpose of this file is to set up imported functions from Firebase/Firestore that will help to interact with the Firestore database. Those functions include {collection, getDocs, addDoc, updateDoc, deleteDoc, and doc}. 
 
 In the app folder, the store.ts file was created to set up the Redux toolkit. In this file, the Store is exported to be used and accessed globally, Rootstate to be used in type safety checking when accessing data, and AppDispatch to be used in type safety when dispatching actions.
