@@ -38,6 +38,18 @@ Main.tsx is using <React.StrictMode> to find bugs and enforcing best practices d
 6.https://firebase.google.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand_sem&utm_content=na_us&gclsrc=aw.ds&gad_source=1&gad_campaignid=12211052842&gbraid=0AAAAADpUDOguOAjGH0TS2tPoO-XBOkiD5&gclid=EAIaIQobChMInIiv_Yq5jgMVYFR_AB2-UQE6EAAYASAAEgLgg_D_BwE
 
 
+To set up Jest in your TypeScript workspace, you'll need a Jest config file and a sample test. Here's what to add:
+
+Apply Changes
+Install Jest and related dependencies:
+npm install --save-dev jest ts-jest @types/jest @testing-library/react @testing-library/jest-dom
+
+Initialize Jest config for TypeScript:
+npx ts-jest config:init
+npx jest
+
+Run your tests with:
+
 
 
 
